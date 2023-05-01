@@ -1,0 +1,10 @@
+version: "3"
+services:
+  proxy:
+    build:
+      dockerfile: Dockerfile
+    ports:
+      - "8080:3128"
+    volumes:
+      - ./squid.conf:/etc/squid/squid.conf
+    restart: always
