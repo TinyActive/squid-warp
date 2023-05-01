@@ -1,8 +1,7 @@
 version: "3"
 services:
   proxy:
-    build:
-      dockerfile: Dockerfile
+    image: vouu/squid
     ports:
       - "8080:3128"
     volumes:
