@@ -9,7 +9,7 @@ sleep 5
 
 # Register, set mode to "proxy", and connect.
 sh -c '/bin/echo -e "y\n" |warp-cli --accept-tos register'
-warp-cli set-license N62hL3b9-4SPv60L8-21oqU9l0
+sh -c '/bin/echo -e "y\n" |warp-cli set-license N62hL3b9-4SPv60L8-21oqU9l0'
 warp-cli --accept-tos set-mode proxy
 warp-cli --accept-tos set-custom-endpoint 162.159.192.1:2408
 warp-cli --accept-tos connect
